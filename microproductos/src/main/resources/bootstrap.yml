@@ -1,4 +1,4 @@
 spring:
   application:
-    name: servicio.catalogo
-  cloud:    config:      uri: http://localhost:4444  profiles:    active:    - dev
+    name: servicio.productos
+  #cloud:    #config:      #uri: http://localhost:4444  #profiles:    #active:    #- dev

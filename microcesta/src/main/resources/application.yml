@@ -1,8 +1,8 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream, info, health
+#management:
+  #endpoints:
+    #web:
+      #exposure:
+        #include: hystrix.stream, info, health
         
 # Discovery Server Access
 eureka:
@@ -16,7 +16,7 @@ server:
   
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/carritomicro?useSSL=false
+    url: jdbc:mysql://localhost:3306/carritomicro
     username: root
     password: diosteama-9
   jpa:

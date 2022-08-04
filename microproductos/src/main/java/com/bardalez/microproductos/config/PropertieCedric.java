@@ -8,13 +8,13 @@ import org.springframework.context.annotation.Configuration;
 //@RefreshScope
 public class PropertieCedric {
 
-	@Value("${cedric.propiedad.refresh}")
-	private String message;
-
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
-	}
+//	@Value("${cedric.propiedad.refresh}")
+//	private String message;
+//
+//	public String getMessage() {
+//		return message;
+//	}
+//	public void setMessage(String message) {
+//		this.message = message;
+//	}
 }

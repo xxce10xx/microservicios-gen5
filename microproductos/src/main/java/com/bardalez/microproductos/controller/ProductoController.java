@@ -35,8 +35,8 @@ public class ProductoController
 	@Autowired
 	private MongoTemplate mongoTemplate;
 	
-	@Autowired
-	private PropertieCedric prop;
+//	@Autowired
+//	private PropertieCedric prop;
 	
 //	@GetMapping("/cedric")
 //	public String getPropertie() {
