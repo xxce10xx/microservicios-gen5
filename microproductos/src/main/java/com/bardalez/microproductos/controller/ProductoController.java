@@ -35,14 +35,14 @@ public class ProductoController
 	@Autowired
 	private MongoTemplate mongoTemplate;
 	
-//	@Autowired
-//	private PropertieCedric prop;
+	@Autowired
+	private PropertieCedric prop;
 	
-//	@GetMapping("/cedric")
-//	public String getPropertie() {
-//		return prop.getMessage();
-//	}
-//
+	@GetMapping("/cedric")
+	public String getPropertie() {
+		return prop.getMessage();
+	}
+
 //	@GetMapping(value = "/healthCatalogo", produces = "application/json; charset=utf-8")
 //	public String getHealthCheck()
 //	{
