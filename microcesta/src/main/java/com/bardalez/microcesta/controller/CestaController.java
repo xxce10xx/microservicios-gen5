@@ -3,7 +3,7 @@ package com.bardalez.microcesta.controller;
 import java.net.URI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
-//import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +36,7 @@ public class CestaController {
 	private CestaRepository cestaRepository;
 	
 	@Bean
-	//@LoadBalanced
+	@LoadBalanced
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
 	}
@@ -61,10 +61,10 @@ public class CestaController {
 	@GetMapping("/producto/{codigo}")
 	public Producto getProducto(@PathVariable String codigo)
 	{
-		URI catalogoURI = eureka.getUri("SERVICIO.PRODUCTOS");
-		System.out.println("URI DADA POR EUREKA ....  " + catalogoURI);
-		Producto prod = restTemplate.getForObject(catalogoURI.resolve("/producto/"+codigo), Producto.class);
-		//Producto prod = restTemplate.getForObject("http://localhost:1111/producto/"+codigo, Producto.class);
+		//URI catalogoURI = eureka.getUri("SERVICIO.PRODUCTOS");
+		//System.out.println("URI DADA POR EUREKA ....  " + catalogoURI);
+		//Producto prod = restTemplate.getForObject(catalogoURI.resolve("/producto/"+codigo), Producto.class);
+		Producto prod = restTemplate.getForObject("http://SERVICIO.CATALOGO/producto/"+codigo, Producto.class);
 		return prod;
 	}
 	

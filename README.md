@@ -26,5 +26,6 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 1** - *Repaso teorico de los conceptos principales asociados a la arquitectura basada en microservicios (Definicion)*
 * **Sesion 2** - *Levantamos nuestro primer microservicio y estudiamos el servidor de registro y descubrimiento (Eureka Server)*
 * **Sesion 3** - *Levantamos y configuramos nuestro servidor de configuracion centralizada (Spring Cloud Config)*
+* **Sesion 4** - *Estudiamos el balanceo de carga de lado del cliente y su configuracion (Ribbon)*
 
 ## Imagenes referenciales
