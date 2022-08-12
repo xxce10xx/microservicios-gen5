@@ -27,5 +27,6 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 2** - *Levantamos nuestro primer microservicio y estudiamos el servidor de registro y descubrimiento (Eureka Server)*
 * **Sesion 3** - *Levantamos y configuramos nuestro servidor de configuracion centralizada (Spring Cloud Config)*
 * **Sesion 4** - *Estudiamos el balanceo de carga de lado del cliente y su configuracion (Ribbon)*
+* **Sesion 5** - *Explicamos el concepto de tolerancia a fallos, detallamos el Patrón Circuit Breaker y su implementación (Hystrix)*
 
 ## Imagenes referenciales

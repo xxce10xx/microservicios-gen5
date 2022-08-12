@@ -1,8 +1,8 @@
-#management:
-  #endpoints:
-    #web:
-      #exposure:
-        #include: hystrix.stream, info, health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, info, health
         
 # Discovery Server Access
 eureka:

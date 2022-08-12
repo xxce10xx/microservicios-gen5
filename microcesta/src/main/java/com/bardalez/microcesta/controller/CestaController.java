@@ -19,8 +19,8 @@ import com.bardalez.microcesta.client.EurekaClient;
 import com.bardalez.microcesta.model.Cesta;
 import com.bardalez.microcesta.model.Producto;
 import com.bardalez.microcesta.repository.CestaRepository;
-//import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-//import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -57,10 +57,16 @@ public class CestaController {
 		
 	}
 	
-//	@HystrixCommand(fallbackMethod = "fallbackMethod2")
+	@HystrixCommand(fallbackMethod = "fallbackMethod2", commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "2"),
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "20"),
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "500")}
+	)
 	@GetMapping("/producto/{codigo}")
 	public Producto getProducto(@PathVariable String codigo)
 	{
+		
+		System.out.println("************************************************************");
 		//URI catalogoURI = eureka.getUri("SERVICIO.PRODUCTOS");
 		//System.out.println("URI DADA POR EUREKA ....  " + catalogoURI);
 		//Producto prod = restTemplate.getForObject(catalogoURI.resolve("/producto/"+codigo), Producto.class);
@@ -75,7 +81,7 @@ public class CestaController {
 //		return prod;
 //		//return new Producto("0","Articulo de prueba","prueba",1, 38.5, "dasdasd");
 //	}
-//	
+	
 	private Producto fallbackMethod2(String codigo) {
 		return new Producto("0","Articulo de prueba","prueba",1, 38.5, "dasdasd");
 	}

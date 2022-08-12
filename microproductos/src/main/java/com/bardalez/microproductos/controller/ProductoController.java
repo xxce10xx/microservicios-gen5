@@ -49,11 +49,11 @@ public class ProductoController
 //		return "{ \"todoOk\" : true }";
 //	}
 //	
-//	@RequestMapping("/")
-//	public String ribbonPing()
-//	{
-//		return "Ok";
-//	}
+	@RequestMapping("/")
+	public String ribbonPing()
+	{
+		return "Ok";
+	}
 
 	@GetMapping("/productos")
 	public List<Producto> getProductos()

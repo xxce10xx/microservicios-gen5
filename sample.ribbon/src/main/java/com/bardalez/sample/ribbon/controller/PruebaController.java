@@ -20,5 +20,4 @@ public class PruebaController {
 		String prodTemp = this.restTemplate.getForObject("http://SERVICIO.CESTA/producto/"+codigo, String.class);
 		return prodTemp;
 	}
-
 }

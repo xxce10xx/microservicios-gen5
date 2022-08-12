@@ -16,7 +16,7 @@ public class UserApplication {
 	RestTemplate restTemplate;
 
 	@RequestMapping("/prod")
-	public String hi(@RequestParam(value = "codigo", defaultValue = "2") String codigo) {
+	public String hi(@RequestParam(value = "codigo", defaultValue = "3") String codigo) {
 		String prodTemp = this.restTemplate.getForObject("http://SERVICIO.CATALOGO/producto/"+codigo, String.class);
 		return prodTemp;
 	}
