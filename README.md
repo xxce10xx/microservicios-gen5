@@ -19,7 +19,7 @@ _Este repositorio fue construido en sesiones dictadas online_
 
 * **Cedric Bardalez Hall** - *Docente*
 * **Escalab Academy** - *Institucion educativa*
-* **Estudiantes Gen5** - *Alumnos de la generacion 3* 
+* **Estudiantes Gen5** - *Alumnos de la generacion 5* 
 
 ## Contenido
 
@@ -29,5 +29,6 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 4** - *Estudiamos el balanceo de carga de lado del cliente y su configuracion (Ribbon)*
 * **Sesion 5** - *Explicamos el concepto de tolerancia a fallos, detallamos el Patrón Circuit Breaker y su implementación (Hystrix)*
 * **Sesion 6** - *Explicamos las estrategias de aislamiento en Hystrix (semaphore, theread), explicamos e implementamos el patrón bulkhead y levantamos el hystrix dashboard con turbine (Resilience4j)*
+* **Sesion 7** - *Explicamos el funcionamiento y configuracion del servidor perimetral (Zuul)*
 
 ## Imagenes referenciales
