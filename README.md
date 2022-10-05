@@ -32,6 +32,9 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 7** - *Explicamos el funcionamiento y configuracion del servidor perimetral (Zuul)*
 * **Sesion 8** - *Explicamos conceptos teoricos sobre los flujos de autenticacion (OAuth2)*
 * **Sesion 9** - *Levantamos nuestro servidor de Autenticacion y Autorizacion (UAA)*
+* **Sesion 10** - *Estudiamos y ejemplificamos algunos detalles adicionales relacionados a seguridad (CORS, ROLES)*
+* **Sesion 11** - *Estudiamos el patron database per service y el patrón SAGA por orquestación y coreografia (SAGA)*
+* **Sesion 12** - *Ejemplificamos el patron API Facade Composition y el patrón SAGA por coreografia (API Facade, SAGA)*
 
 ## Imagenes referenciales
 

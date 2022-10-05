@@ -13,7 +13,7 @@ public class RibbonConfigurator {
 	
 	@Bean
 	public IRule ribbonRule() {
-		return new RetryRule(new WeightedResponseTimeRule(), 500);
-		//return new RoundRobinRule();
+		//return new RetryRule(new WeightedResponseTimeRule(), 500);
+		 return new RoundRobinRule();
 	}
 }

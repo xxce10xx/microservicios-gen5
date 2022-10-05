@@ -13,6 +13,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "producto")
 public class Producto {
 	
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String port) {
+		this.port = port;
+	}
+
 	@Id 
 	private String codigo;
 	private String nombre;
@@ -20,6 +28,7 @@ public class Producto {
 	private Integer unidades;
 	private Double precioUnitario;
 	private String descripcion;
+	
 	@Transient
 	private String port;
 	
@@ -82,12 +91,6 @@ public class Producto {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-
-	public String getPort() {
-		return port;
-	}
-
-	public void setPort(String port) {
-		this.port = port;
-	}
+	
+	
 }

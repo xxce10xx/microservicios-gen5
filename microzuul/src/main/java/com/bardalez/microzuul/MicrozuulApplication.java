@@ -7,9 +7,6 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
 import com.bardalez.microzuul.filters.MiPreFiltro;
-import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RoundRobinRule;
-import com.netflix.loadbalancer.WeightedResponseTimeRule;
 
 @SpringBootApplication
 @EnableDiscoveryClient
@@ -23,11 +20,6 @@ public class MicrozuulApplication {
 	@Bean
 	public MiPreFiltro miPreFiltro() {
 		return new MiPreFiltro();
-	}
-	
-	@Bean
-	public IRule miRegla() {
-		return new WeightedResponseTimeRule();
 	}
 
 }

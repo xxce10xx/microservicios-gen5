@@ -12,21 +12,15 @@ eureka:
 
 # HTTP Server
 server:
-  port: 3333   # HTTP (Tomcat) port
+  port: 3333 # HTTP (Tomcat) port
+  
+security:  oauth2:    resource:      user-info-uri: http://localhost:7777/user 
   
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/carritomicro
+    url: jdbc:mysql://localhost:3306/carritomicro?useSSL=false
     username: root
     password: diosteama-9
   jpa:
     generate-ddl: true
-
-#servicio.catalogo:
-  #ribbon:
-   # EnableZoneAffinity: true
-   # EnableZoneExclusive: false
-   # zoneAffinity:
-     # minAvailableServers: 1
-     # maxLoadPerServer: 0.8
-     # maxBlackOutServersPercentage: 0.6
+    
