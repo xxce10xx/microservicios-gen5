@@ -1,25 +1,26 @@
-2022-09-13 20:01:36,102 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-09-13 20:01:36,117 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2022-09-13 20:01:36,405 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=f149cb58-932e-3c5b-9eb8-ced3291d7a0a
-2022-09-13 20:01:36,916 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a592a0ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-09-13 20:01:37,898 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 6565 (http)
-2022-09-13 20:01:38,179 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3235 ms
-2022-09-13 20:01:39,863 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2022-09-13 20:01:40,215 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+2022-10-06 20:20:40,590 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-10-06 20:20:40,742 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-10-06 20:20:41,147 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=e8af805b-29fa-34e7-ba0a-eaf9902f254a
+2022-10-06 20:20:41,643 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$da4236c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-06 20:20:41,652 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration$$EnhancerBySpringCGLIB$$324c628] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-06 20:20:42,606 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 6565 (http)
+2022-10-06 20:20:42,794 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3819 ms
+2022-10-06 20:20:45,338 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-06 20:20:45,968 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
 
-Using generated security password: 0a0be56b-d4e1-4de3-add2-edf6e896eda9
+Using generated security password: e5dd99e9-80ae-4247-a80f-308d19508b19
 
-2022-09-13 20:01:40,462 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@179bf086, org.springframework.security.web.context.SecurityContextPersistenceFilter@9f17c71, org.springframework.security.web.header.HeaderWriterFilter@2b128469, org.springframework.web.filter.CorsFilter@40eba819, org.springframework.security.web.authentication.logout.LogoutFilter@42bbb0a4, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3d94f56a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@798ced6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d52e8aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f682c7, org.springframework.security.web.session.SessionManagementFilter@4c0ec644, org.springframework.security.web.access.ExceptionTranslationFilter@2ea11c84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20b5f91f]
-2022-09-13 20:01:40,573 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
-2022-09-13 20:01:41,143 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [restartedMain] Starting filter initializer
-2022-09-13 20:01:41,161 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-09-13 20:01:41,234 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
-2022-09-13 20:01:41,248 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 14 ms
-2022-09-13 20:01:41,282 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
-2022-09-13 20:01:42,311 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application MICRO-ZUUL with eureka with status UP
-2022-09-13 20:01:42,387 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 6565 (http) with context path ''
-2022-09-13 20:01:42,388 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 6565
-2022-09-13 20:03:23,978 WARN org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter [http-nio-6565-exec-1] Error during filtering
+2022-10-06 20:20:46,560 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4970977f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7be5c329, org.springframework.security.web.header.HeaderWriterFilter@1489cb02, org.springframework.web.filter.CorsFilter@4acf8b35, org.springframework.security.web.authentication.logout.LogoutFilter@2c4ba472, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7dc015ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@444c31dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6acd289, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15970856, org.springframework.security.web.session.SessionManagementFilter@72752707, org.springframework.security.web.access.ExceptionTranslationFilter@36645db1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f49fe1b]
+2022-10-06 20:20:46,735 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-10-06 20:20:47,409 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [restartedMain] Starting filter initializer
+2022-10-06 20:20:47,514 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-06 20:20:47,560 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-10-06 20:20:47,584 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 24 ms
+2022-10-06 20:20:47,645 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-10-06 20:20:48,961 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application MICRO-ZUUL with eureka with status UP
+2022-10-06 20:20:49,001 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 6565 (http) with context path ''
+2022-10-06 20:20:49,002 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 6565
+2022-10-06 20:23:31,853 WARN org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter [http-nio-6565-exec-2] Error during filtering
 com.netflix.zuul.exception.ZuulException: 
 	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.findZuulException(SendErrorFilter.java:118)
 	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.run(SendErrorFilter.java:78)
@@ -43,6 +44,9 @@ com.netflix.zuul.exception.ZuulException:
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:65)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
@@ -96,6 +100,13 @@ com.netflix.zuul.exception.ZuulException:
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:82)
+	at org.springframework.cloud.sleuth.instrument.web.TraceWebServletAutoConfiguration$LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:143)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
 	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
@@ -125,7 +136,7 @@ com.netflix.zuul.exception.ZuulException:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-2022-09-13 20:04:48,237 WARN org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter [http-nio-6565-exec-5] Error during filtering
+2022-10-06 20:26:05,104 WARN org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter [http-nio-6565-exec-6] Error during filtering
 com.netflix.zuul.exception.ZuulException: 
 	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.findZuulException(SendErrorFilter.java:118)
 	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.run(SendErrorFilter.java:78)
@@ -142,13 +153,16 @@ com.netflix.zuul.exception.ZuulException:
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:65)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
@@ -202,6 +216,13 @@ com.netflix.zuul.exception.ZuulException:
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:82)
+	at org.springframework.cloud.sleuth.instrument.web.TraceWebServletAutoConfiguration$LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:143)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
 	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
@@ -231,7 +252,7 @@ com.netflix.zuul.exception.ZuulException:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-2022-09-13 20:08:37,368 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(15)-127.0.0.1] Application shutdown requested.
-2022-09-13 20:08:37,381 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(15)-127.0.0.1] Unregistering application MICRO-ZUUL with eureka with status DOWN
-2022-09-13 20:08:37,384 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [RMI TCP Connection(15)-127.0.0.1] Stopping filter initializer
-2022-09-13 20:08:37,429 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(15)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-06 20:35:48,765 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(24)-127.0.0.1] Application shutdown requested.
+2022-10-06 20:35:48,766 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(24)-127.0.0.1] Unregistering application MICRO-ZUUL with eureka with status DOWN
+2022-10-06 20:35:48,769 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [RMI TCP Connection(24)-127.0.0.1] Stopping filter initializer
+2022-10-06 20:35:48,772 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(24)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
